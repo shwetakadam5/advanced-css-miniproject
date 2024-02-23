@@ -1,0 +1,149 @@
+/* Creating custom variable on root of the page */
+:root {
+    --pagefontcolor: darkorchid;
+    --customfontcontentcolor: white;
+    --paddingvalue : 2px;
+}
+
+/* Universal selectors */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: var(--pagefontcolor);
+
+}
+
+/* Element selectors */
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* flex-wrap: wrap; */
+
+}
+
+header {
+    padding: var(--paddingvalue);
+    
+}
+
+main {
+    padding: var(--paddingvalue);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    /* align-content: center; */
+}
+
+footer {
+    padding: var(--paddingvalue);
+}
+
+section {
+    padding: var(--paddingvalue);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+article {
+    margin: 10px;
+    padding: var(--paddingvalue);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: relative;   
+   
+}
+
+pre {
+    color: var(--customfontcontentcolor);
+    background-color: var(--pagefontcolor);
+    padding: var(--paddingvalue);
+}
+
+
+h1 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1.17em;
+}
+
+h4 {
+    display: inline-block;
+    font-size: 1 em;
+}
+
+h5 {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+h6 {
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+div{
+    display: flex;  
+    flex-direction: column; 
+    flex-wrap: wrap;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-color: var(--customfontcontentcolor);
+    border-style: dashed;
+    padding: var(--paddingvalue);  
+    
+}
+
+p{
+    font-size : 12px;
+   padding: var(--paddingvalue);
+}
+
+
+/*Class selectors*/
+.cssIntroduction p {
+    color: var(--customfontcontentcolor);
+    font-size: 0.8em;
+    text-align: center;
+    
+}
+
+.artHeader{
+    border: 1px;
+    border-style: solid;
+    border-color: var(--customfontcontentcolor);
+    border-radius: 5%;
+ 
+    padding: var(--paddingvalue);
+   
+}
+
+

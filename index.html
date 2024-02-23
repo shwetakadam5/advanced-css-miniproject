@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Cheatsheet</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>CSS Snippet Cheatsheet</h1>
+    </header>
+
+    <section class="cssIntroduction">
+        <p>Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanent home and add it
+            to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+    </section>
+
+    <main>
+        <section>
+            <article>
+                <header class="artHeader">
+                    <h3>Flexbox Row</h3>
+                </header>
+                <div>
+                    <p>Use these three properties to create a Flexbox row layout</p>
+
+                    <pre>
+.row{
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap
+}
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <header class="artHeader">
+                    <h3>Linear Gradients</h3>
+                </header>
+                <div>
+                    <p>This will create a background linear gradient from top to bottom</p>
+
+                    <pre>
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(232,102,236,0.3)0%,rgba(232,102,236,0,6)100%);
+}
+                    </pre>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <header class="artHeader">
+                    <h3>Flexbox Column</h3>
+                </header>
+                <div>
+                    <p>Use this to create a Flexbox column layout </p>
+
+                    <pre>
+.column {
+display: flex;
+flex-direction: column;
+}
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <header class="artHeader">
+                    <h3>Box Transition Glow</h3>
+                </header>
+                <div>
+                    <p>Use transition and box shadows to glow on hover.</p>
+
+                    <pre>
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover  .card-header{
+    box-shadow: inset 0px 0px 8px rgba(232,102,236,1),0 0 15px rgba(232,102,236,1);
+}
+                    </pre>
+                </div>
+
+            </article>
+        </section>
+
+
+        <section>
+
+            <article>
+                <header class="artHeader">
+                    <h3>CSS Grid Layout</h3>
+                </header>
+
+                <div>
+                    <p>Build a 12-column layout using CSS Grid</p>
+
+                    <pre>
+.grid{
+display: grid;
+width: 100%;
+grid-template-columns: repeate(12,1fr);
+}
+                    </pre>
+                </div>
+            </article>
+
+            <article>
+                <header class="artHeader">
+                    <h3>Overlay Card with Title</h3>
+                </header>
+                <div>
+                    <p>User position properties and negative margins to raise elements higher than their natural starting
+                    point
+                    </p>
+
+                    <pre>
+.card-header{
+    position: relative;
+    margin-top: -20px;
+}
+                    </pre>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h4>
+            Made with ❤️ and CSS
+        </h4>
+    </footer>
+
 </body>
+
 </html>
