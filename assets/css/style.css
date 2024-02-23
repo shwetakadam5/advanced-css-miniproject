@@ -2,7 +2,7 @@
 :root {
     --pagefontcolor: darkorchid;
     --customfontcontentcolor: white;
-    --paddingvalue : 2px;
+    --paddingvalue : 20px;
 }
 
 /* Universal selectors */
@@ -23,51 +23,68 @@ html {
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    /* flex-wrap: wrap; */
+    /* 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
 
 }
 
 header {
-    padding: var(--paddingvalue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: var(--paddingvalue); */
+    margin-top: 10px;
+    
     
 }
 
 main {
-    padding: var(--paddingvalue);
-    display: flex;
+    padding: 0px;
+    /* text-align: left; */
+    /* display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: column; */
+    /* align-items: stretch; */
     /* align-content: center; */
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: var(--paddingvalue);
 }
 
 section {
-    padding: var(--paddingvalue);
+    /* margin: 20px;
+    padding: var(--paddingvalue); */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;   
     flex-wrap: wrap;
-    
+    /* flex: 0 0 100px; */
+    align-items: center;
+    justify-content: center;
 }
 
 article {
-    margin: 10px;
-    padding: var(--paddingvalue);
+    margin: 20px;
+    
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     position: relative;   
+    
+    
    
 }
 
@@ -78,33 +95,30 @@ pre {
 }
 
 
-h1 {
-    display: inline-block;
-    font-size: 2em;
+h1 {    
+    font-size: 2em;    
 }
 
-h2 {
-    display: inline-block;
+h2 {    
     font-size: 1.5em;
 }
 
-h3 {
-    display: inline-block;
+h3 {    
     font-size: 1.17em;
 }
 
 h4 {
-    display: inline-block;
+    
     font-size: 1 em;
 }
 
 h5 {
-    display: inline-block;
+    
     font-size: 0.8em;
 }
 
 h6 {
-    display: inline-block;
+   
     font-size: 0.7em;
 }
 
@@ -122,17 +136,24 @@ div{
     
 }
 
-p{
-    font-size : 12px;
-   padding: var(--paddingvalue);
-}
-
 
 /*Class selectors*/
 .cssIntroduction p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: var(--customfontcontentcolor);
+    font-size : 0.8em;
+    text-align: left;
+    
+}
+
+div p {
+    color: var(--pagefontcolor);
     font-size: 0.8em;
-    text-align: center;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
     
 }
 

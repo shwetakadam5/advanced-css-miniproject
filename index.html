@@ -21,7 +21,7 @@
     </section>
 
     <main>
-        <section>
+        <section class ="snippetBox">
             <article>
                 <header class="artHeader">
                     <h3>Flexbox Row</h3>
@@ -41,23 +41,6 @@
 
             <article>
                 <header class="artHeader">
-                    <h3>Linear Gradients</h3>
-                </header>
-                <div>
-                    <p>This will create a background linear gradient from top to bottom</p>
-
-                    <pre>
-.linear-gradient-background {
-    background-image: linear-gradient(rgba(232,102,236,0.3)0%,rgba(232,102,236,0,6)100%);
-}
-                    </pre>
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <header class="artHeader">
                     <h3>Flexbox Column</h3>
                 </header>
                 <div>
@@ -71,6 +54,39 @@ flex-direction: column;
                     </pre>
                 </div>
             </article>
+
+            <article>
+                <header class="artHeader">
+                    <h3>CSS Grid Layout</h3>
+                </header>
+
+                <div>
+                    <p>Build a 12-column layout using CSS Grid</p>
+
+                    <pre>
+.grid{
+display: grid;
+width: 100%;
+grid-template-columns: repeate(12,1fr);
+}
+                    </pre>
+                </div>
+            </article>  
+
+            <article>
+                <header class="artHeader">
+                    <h3>Linear Gradients</h3>
+                </header>
+                <div>
+                    <p>This will create a background linear gradient from top to bottom</p>
+
+                    <pre>
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(232,102,236,0.3)0%,rgba(232,102,236,0,6)100%);
+}
+                    </pre>
+                </div>
+            </article>                     
 
             <article>
                 <header class="artHeader">
@@ -92,29 +108,7 @@ flex-direction: column;
                     </pre>
                 </div>
 
-            </article>
-        </section>
-
-
-        <section>
-
-            <article>
-                <header class="artHeader">
-                    <h3>CSS Grid Layout</h3>
-                </header>
-
-                <div>
-                    <p>Build a 12-column layout using CSS Grid</p>
-
-                    <pre>
-.grid{
-display: grid;
-width: 100%;
-grid-template-columns: repeate(12,1fr);
-}
-                    </pre>
-                </div>
-            </article>
+            </article>               
 
             <article>
                 <header class="artHeader">
