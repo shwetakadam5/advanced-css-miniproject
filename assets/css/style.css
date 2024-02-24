@@ -84,12 +84,13 @@ h3 {
     font-size: 1.17em;
     border: 1px;
     border-style: solid;
-    border-color: var(--customfontcontentcolor);
-    border-radius: 5%; 
+    border-color: var(--customfontcontentcolor);  
     text-align: left;
     padding-right: 100px;
     padding-top: 10px;
     padding-bottom: 20px;
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
  
 }
 
@@ -119,6 +120,8 @@ div{
     border-color: var(--customfontcontentcolor);
     border-style: dashed;
     padding: 0px;
+    border-radius: 8px;
+    transition: all 1s ease-in-out; 
     
 }
 
@@ -127,8 +130,7 @@ div p {
     font-size: 0.8em;
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;   
     
 }
 
@@ -144,7 +146,9 @@ div p {
 
 .artHeader{
     position: relative;
-    margin-top: -15px;    
+    margin-top: -15px;   
+
+    
 }
 
 /*Added a gradient background for the code snippet*/
