@@ -1,6 +1,6 @@
 /* Creating custom variable on root of the page */
 :root {
-    --pagefontcolor: darkorchid;
+    --pagefontcolor: rgba(208, 86, 224, 0.6) ;
     --customfontcontentcolor: white;
     --paddingvalue : 20px;
 }
@@ -65,21 +65,18 @@ footer {
     padding: var(--paddingvalue);
 }
 
-section {
-    /* margin: 20px;
-    padding: var(--paddingvalue); */
+section {    
     display: flex;
     flex-direction: row;   
     flex-wrap: wrap;
     justify-content:space-evenly;
     /* flex: 0 0 100px; */
-     /* align-items: center;
-    justify-content: center; */ */
+   
 }
 
 article {
-    margin: 20px;
-    
+
+    margin: 20px;    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -89,9 +86,12 @@ article {
 }
 
 pre {
-    color: var(--customfontcontentcolor);
-    background-color: var(--pagefontcolor);
+    color: var(--customfontcontentcolor);        
     padding: var(--paddingvalue);
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(150, 29, 150, 0.3)0%,rgba(208, 86, 224, 0.6)100%);
 }
 
 
@@ -105,6 +105,17 @@ h2 {
 
 h3 {    
     font-size: 1.17em;
+     border: 1px;
+    border-style: solid;
+    border-color: var(--customfontcontentcolor);
+    border-radius: 5%; 
+    text-align: left;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    transition : all 5s ease-in-out;
+   
 }
 
 h4 {
@@ -129,10 +140,10 @@ div{
     border-left-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 1px;
-    border-top-width: 0;
+    border-top-width: 1px;
     border-color: var(--customfontcontentcolor);
     border-style: dashed;
-    padding: var(--paddingvalue);  
+    padding: 0px;
     
 }
 
@@ -158,13 +169,52 @@ div p {
 }
 
 .artHeader{
-    border: 1px;
-    border-style: solid;
-    border-color: var(--customfontcontentcolor);
-    border-radius: 5%;
- 
-    padding: var(--paddingvalue);
+    position: relative;
+    margin-top: -15px;
+    border-radius: 8px;
+    transition : all 5s ease-in-out;
    
 }
 
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
 
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+  }
+
+  h3:hover, .artHeader:hover{
+    box-shadow : inset 0px 0px 8px rgba(208, 86, 224, 0.6),0 0 15px rgba(208, 86, 224, 0.6);
+  }
+
+  
