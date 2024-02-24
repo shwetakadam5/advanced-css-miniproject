@@ -29,32 +29,18 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    /* padding: var(--paddingvalue); */
-    margin-top: 10px;
-    
-    
+    align-items: center;   
+    margin-top: 10px;      
 }
 
 main {
-    padding: 0px;
-    /* text-align: left; */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
-    /* align-items: stretch; */
-    /* align-content: center; */
+    padding: 0px;   
 }
 
 footer {
@@ -69,31 +55,22 @@ section {
     display: flex;
     flex-direction: row;   
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    /* flex: 0 0 100px; */
-   
+    justify-content:center;
+    /* flex: 0 0 100px; */   
 }
 
 article {
-
     margin: 20px;    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    position: relative;     
-    
-   
+    position: relative;       
 }
 
 pre {
     color: var(--customfontcontentcolor);        
     padding: var(--paddingvalue);
 }
-
-.linear-gradient-background {
-    background-image: linear-gradient(rgba(150, 29, 150, 0.3)0%,rgba(208, 86, 224, 0.6)100%);
-}
-
 
 h1 {    
     font-size: 2em;    
@@ -105,7 +82,7 @@ h2 {
 
 h3 {    
     font-size: 1.17em;
-     border: 1px;
+    border: 1px;
     border-style: solid;
     border-color: var(--customfontcontentcolor);
     border-radius: 5%; 
@@ -113,9 +90,7 @@ h3 {
     padding-right: 100px;
     padding-top: 10px;
     padding-bottom: 20px;
-    border-radius: 8px;
-    transition : all 5s ease-in-out;
-   
+ 
 }
 
 h4 {
@@ -147,6 +122,15 @@ div{
     
 }
 
+div p {
+    color: var(--pagefontcolor);
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
 
 /*Class selectors*/
 .cssIntroduction p {
@@ -158,23 +142,18 @@ div{
     
 }
 
-div p {
-    color: var(--pagefontcolor);
-    font-size: 0.8em;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-    
-}
-
 .artHeader{
     position: relative;
-    margin-top: -15px;
-    border-radius: 8px;
-    transition : all 5s ease-in-out;
-   
+    margin-top: -15px;    
 }
+
+/*Added a gradient background for the code snippet*/
+
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(150, 29, 150, 0.3)0%,rgba(208, 86, 224, 0.6)100%);
+}
+
+/*Added a grid layout with 3 columns and 2 rows*/
 
 .grid-container{
     display:grid;
@@ -182,7 +161,13 @@ div p {
     grid-template-rows: auto auto;
 }
 
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+/*This will glow the border of header and the code snippet on hover*/
+h3:hover ,  
+  .artHeader:hover {
+    box-shadow : inset 0px 0px 8px rgba(208, 86, 224, 0.6),0 0 15px rgba(208, 86, 224, 0.6);
+  }
+
+/*Enabling the Responsive layout */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
@@ -213,8 +198,7 @@ div p {
     }
   }
 
-  h3:hover, .artHeader:hover{
-    box-shadow : inset 0px 0px 8px rgba(208, 86, 224, 0.6),0 0 15px rgba(208, 86, 224, 0.6);
-  }
+  
+  
 
   
